@@ -49,11 +49,11 @@ fechahasta.setDate(fechahasta.getDate()+7);
 
 
 
-    let completeUrl=`${this.apiUrl} /discover/movie${this.apiKey}&certification_country=US&certification.lte=G&sort_by=popularity.desc`;
+    let completeUrl=`${this.apiUrl}/discover/movie${this.apiKey}&certification_country=US&certification.lte=G&sort_by=popularity.desc`;
 
 
    
-return this.http.get<any>(completeUrl).pipe(map(response=>response.results.title));
+return this.http.get<any>(completeUrl).pipe(map(response=>response.results));
 
 
 

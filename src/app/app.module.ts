@@ -14,6 +14,7 @@ import { PopularMoviesComponent } from './components/popular-movies/popular-movi
 import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { PeliculaImagenPipe } from './pipes/pelicula-imagen.pipe';
+import { GaleriaComponent } from './components/home/galeria.component';
 
 
 
@@ -29,7 +30,9 @@ import { PeliculaImagenPipe } from './pipes/pelicula-imagen.pipe';
     
     BuscarComponent,
     
-    PeliculaImagenPipe
+    PeliculaImagenPipe,
+    
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

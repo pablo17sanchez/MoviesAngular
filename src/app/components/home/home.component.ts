@@ -10,19 +10,17 @@ export class HomeComponent implements OnInit {
 
 
   cartelera:any;
+populares:any;
 
   constructor(private _ps:PeliculasService) { }
 
   ngOnInit() {
 
 
-    this._ps.getCartelera().subscribe(data=>{
+    this._ps.getCartelera().subscribe(data=>this.cartelera=data);
 
 
-      console.log(data);
-this.cartelera=data;
-
-    })
+    this._ps.getPopularesMovies().subscribe(datas=>this.populares=datas);
   }
 
 }
